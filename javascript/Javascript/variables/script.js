@@ -35,6 +35,11 @@ console.log(tony)
     var v = 100;
     console.log(v)
 
+    console.log(y)
+var y = "100"
+
+
+console.log(w)
 
    {let tony = "bright"
     console.log(tony)
