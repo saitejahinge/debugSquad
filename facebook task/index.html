@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="table"> 
+    <h1>facebook</h1>
+    <section class="create">
+        <div class="total">
+            <h3>Create a new account</h3>
+            <h5> It's quick and easy. </h5>
+            <hr>
+            <div class="name">
+
+                <input class="nam" type="text" placeholder="First Name">
+
+                <input class="nam" type="text" placeholder="Surename">
+            </div>
+            <p class="date">date of birth</p>
+            <div class="select"> 
+            <select class="sel" name="" id="date">
+            </select>
+            <select class="sel" name="" id="month"></select>
+            <select class="sel" name="" id="year"></select>
+
+</div>
+
+
+
+            <p class="date">Gender</p>
+            <div class="gender">
+                <div class="rk">
+                <label for="">Female</label>
+                <input class="gen" type="radio" name="gender"></div>
+                
+                <div class="rk">
+                <label for="">Male</label>
+                <input class="gen" type="radio" name="gender"></div>
+
+                <div class="rk">
+                <label for="">Custom</label>
+                <input class="gen" type="radio" name="gender"></div>
+            </div>
+            <input class="width" type="text" placeholder="Mobile number or email address"><br>
+            <input class="width" type="text" placeholder="New password"><br>
+
+            <button class="butt but">
+                Sign Up
+            </button><br>
+            <a class="butt" href="#">Already have a account</a>
+
+
+
+
+
+
+        </div>
+
+    </section>
+    </section>
+
+    <script>
+        let day = document.getElementById("date")
+        for (let i = 1; i <= 31; i++) {
+            day.innerHTML += `<option value=${i}> ${i} </option>`
+        }
+        let arr = new Array("Jan","Feb","Mar","Apl","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+        let month = document.getElementById("month")
+        for (let i = 0; i <= arr.length; i++) {
+            month.innerHTML += `<option value=${arr[i]}> ${arr[i]} </option>`
+        }
+        let year = document.getElementById("year")
+        for (let i = 2025; i>= 1905; i--) {
+            year.innerHTML+= `<option value=${i}> ${i} </option>`
+        }
+    </script>
+
+</body>
+
+</html>
