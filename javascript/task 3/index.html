@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+    <style>
+
+.card{
+    background-color: darkcyan;
+    height: 20%;
+    width:20% ;
+     border: radius 5px; ;
+}
+
+
+    </style>
+</head>
+<body>
+    
+<!-- 3. Display Product Cards
+Create product cards using loop. Each card should show name, price, and category.
+[
+{ name: "Shirt", price: 500, category: "Clothing" },
+{ name: "Watch", price: 1200, category: "Accessories" }
+] -->
+
+
+
+   <section id="productt">    
+
+</section>
+
+
+
+<script>
+
+let namee=[{name: "Shirt", price: "500", category: "Clothing"},{name: "Watch", price: "1200", category: "Accessories"}]; 
+ 
+let product=document.getElementById("productt")
+for(i=0; i<=namee.length; i++){
+    
+product.innerHTML +=`<div class="card"><p>name:${namee[i].name }   </p>
+    
+    <p>price:${namee[i].price} </p>
+     <p> category:${namee[i].category} </p>
+
+    </div> `
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

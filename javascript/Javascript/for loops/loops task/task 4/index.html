@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+</head>
+<body>
+    <!-- 4. Build Order Summary Table
+Using an array of objects (name, quantity, price), create a table with:
+S.No | Product | Quantity | Price | Total -->
+
+
+
+<table border="1px" id="table">
+
+<tr>
+     <th>
+        sno
+     </th>
+
+    <th>
+      Product  
+    </th>
+    <th>
+        Quantity
+    </th>
+    <th>
+        Pricel
+    </th>
+
+    <th>
+        Total
+    </th>
+
+
+</tr>
+
+</table>
+
+
+
+<script>
+
+let tony=[{ sno:1, product: "apple" ,Quantity:2, Pricel:100, Total:100},
+{ sno:2,  product: "banana" ,Quantity:3, Pricel:30, Total:30},
+{ sno:3,   product: "orange" ,Quantity:5, Pricel:120, Total:120}
+]
+let toni=document.getElementById("table")
+for(i=0; i<=tony.length; i++){
+toni.innerHTML += `<tr> <td> ${tony[i].product} </td> <td> ${tony[i].Quantity} </td>
+
+<td> ${tony[i].Pricel} </td> <td> ${tony[i].Total} </td>
+ <td> ${tony[i].Pricel*tony[i].Quantity}</td>
+ </tr>`
+
+}
+
+ 
+
+    
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

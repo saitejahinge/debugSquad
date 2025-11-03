@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 7</title>
+</head>
+<body>
+   <!-- 7. Find Item Until Match
+Loop through product names until you find “Camera”. Stop the loop once found.  -->
+
+
+<div id="tony">
+
+</div>
+
+<script>
+
+let product=["apple","fan","camera","car"]
+
+ for(i=0; i<product.length; i++){
+    let pr="";
+    if(product[i]!="camera"){
+        pr+=product[i]; 
+        document.write("  "+pr+" ")  
+    }
+    else{
+        document.write("Camera Found")
+        break; 
+    }
+    // document.write(pr)
+}
+
+
+
+</script>
+
+</body>
+</html>
