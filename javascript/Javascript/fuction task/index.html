@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuction task</title>
+</head>
+<body>
+    <script>
+
+
+
+let amount=parseInt(prompt("enter the bill amount" ));
+let items=prompt("enter the items(dosa/idly/bonda)");
+let quantity=parseInt(prompt("enter the quantity"));
+function billcalculation(amount,items,quantity){
+let tax=(amount * (1+10/100));
+let gst=(amount * (1+5/100));
+let total=amount + tax + gst
+document.write("amount", "items", "quantity", "total bill:" + total, + gst);
+}
+ billcalculation( amount,items,quantity);
+ 
+    </script>
+</body>
+</html>
